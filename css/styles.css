@@ -1,0 +1,87 @@
+
+body{
+font-family: 'Inconsolata', monospace;
+font-size: 15px;
+margin: 0;
+height: 100%;
+}
+
+h1,h2, .skills-list {
+  font-family: 'Raleway', sans-serif;
+}
+img {
+  /* this is limiting the width of the image in relation to its parent max */
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  background-color: lightpink;
+  z-index: 1;  /*layers,base number is 0 */
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0;
+  font-size: 14px;
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 120px;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -70px;
+
+}
+
+h1{
+  font-size: 100px;
+  line-height: 110%;
+}
+
+.buttom{
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 40px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+figcaption{
+  font-size: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.face{
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+
+h2{
+  font-size: 15px;
+  line-height: 110%;
+}
+.skills-list {
+    text-align: center;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 130px;
+}

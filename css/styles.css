@@ -6,6 +6,7 @@ margin: 0;
 height: 100%;
 }
 
+
 h1,h2,h3 .skills-list {
   font-family: 'Raleway', sans-serif;
 }
@@ -51,15 +52,31 @@ header {
 
 }
 
+@media (min-width: 640px) {
+  h1 {
+    font-size:50px;
+  }
+
+}
+
+@media (min-width: 768px) {
 h1{
   font-size: 100px;
   line-height: 110%;
+  }
 }
+@media (min-width: 768px) {
+h2{
+  font-size: 30px;
+  line-height: 110%;
+}
+}
+@media (min-width: 768px) {
 h2{
   font-size: 50px;
   line-height: 110%;
 }
-
+}
 h3{
   font-size: 30px;
   line-height: 110%;

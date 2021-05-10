@@ -36,7 +36,8 @@ a {
 nav ul {
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 21px;
+line-height: 130%;
 }
 
 header {
@@ -62,6 +63,7 @@ h2{
 h3{
   font-size: 30px;
   line-height: 110%;
+  margin-left: 15px;
 }
 
 .buttom{
@@ -123,3 +125,8 @@ footer{
   align-content: center;
   display: grid;
   }
+
+p{
+  margin-left: 20px;
+  margin-right: 15px;
+}

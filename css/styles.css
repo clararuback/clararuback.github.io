@@ -1,7 +1,7 @@
 
 body{
 font-family: 'Inconsolata', monospace;
-font-size: 15px;
+font-size: 20px;
 margin: 0;
 height: 100%;
 }
@@ -116,8 +116,10 @@ footer{
   height: 300px;
 }
 
-
-
 .colunanios{
  width: 330;
 }
+  .col-sm {
+  align-content: center;
+  display: grid;
+  }

@@ -106,10 +106,14 @@ figcaption{
   font-size: 10px;
   text-align: center;
 }
+ul {
+  padding-inline-start: 0px;
 
+}
 ul li {
   margin: 10px;
   align-items: center;
+
 }
 
 .face{

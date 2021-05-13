@@ -65,7 +65,12 @@ h1{
   line-height: 110%;
   }
 }
-
+@media (min-width: 768px) {
+.textNios{
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+  }
+}
 @media (min-width: 640px) {
   .project2mobile{
     display:none;

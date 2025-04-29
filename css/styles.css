@@ -106,17 +106,60 @@ h2{
 h3{
   font-size: 30px;
   line-height: 110%;
-  margin-left: 15px;
+  margin: 15px;
 }
 
+.highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .results {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 25px 0;
+        }
+        .metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .metric {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            min-width: 200px;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        
+.challenge-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+
+
 .buttom{
-  border: 1px solid black;
+  border: 2px solid black;
   text-decoration: none;
+  background-color: #ed7867;
   color: black;
   padding: 10px 20px;
-  margin: 40px;
+  margin: 20px;
   display: inline-block;
   border-radius: 20px;
+  width: fit-content;
+  display: inline-block;
+
+
 }
 
 
@@ -126,6 +169,12 @@ margin: 20px;
 
 .columnleft {
 background-color: #aed9ff;
+margin: 36px;
+border-radius: 20px;
+padding: 40px;
+height: fit-content;
+}
+.columnimg{
 margin: 36px;
 border-radius: 20px;
 }

@@ -41,15 +41,15 @@
     /* Header */
     .site-header {
       position: sticky; top: 0; z-index: 60; backdrop-filter: blur(8px);
-      background: color-mix(in srgb, var(--bg-2) 80%, transparent);
+      background: color-mix(in srgb, var(--bg-2) 70%, transparent);
       border-bottom: 1px solid rgba(0,0,0,.06);
     }
     .nav {
       max-width: var(--maxw); margin: 0 auto; padding: .8rem 1rem; display: flex; align-items: center; gap: 1rem; justify-content: space-between;
     }
     .brand { display: flex; align-items: center; gap: .6rem; font-weight: 700; letter-spacing: .02em; }
-    .brand-badge { width: 10px; height: 10px; background: var(--accent); border-radius: 999px; box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 22%, transparent); }
-    .nav a { padding: .4rem .7rem; border-radius: 10px; font-weight: 500; color: var(--muted); }
+    .brand-badge { width: 10px; height: 10px; background: var(--accent-3); border-radius: 999px; box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 22%, transparent); }
+    .nav a { padding: .4rem .7rem; border-radius: 10px; font-weight: 500; color: var(--text); }
     .nav a:hover { color: var(--text); background: #fff; box-shadow: var(--shadow); transform: translateY(-1px); transition: all .25s ease; }
 
     /* Hero */
@@ -90,11 +90,11 @@
     .desc { color: var(--muted); }
 
     .card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,.12); transition: all .3s cubic-bezier(.2,.6,.2,1); }
-    .card .shine { position: absolute; inset: 0; background: linear-gradient(105deg, transparent, rgba(255,255,255,.16) 30%, transparent 60%); transform: translateX(-120%); opacity: 0; }
+    /*.card .shine { position: absolute; inset: 0; background: linear-gradient(105deg, transparent, rgba(255,255,255,.16) 30%, transparent 60%); transform: translateX(-120%); opacity: 0; }*/
     .card:hover .shine { transform: translateX(120%); opacity: 1; transition: transform .8s ease; }
 
     .meta { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: .6rem; }
-    .pill { font-size: var(--step--2); background: color-mix(in srgb, var(--accent) 10%, #fff); color: #5b6168; border: 1px solid rgba(0,0,0,.06); padding: .3rem .55rem; border-radius: 999px; }
+    .pill { font-size: var(--step--2); background: color-mix(in srgb, var(--accent-3) 30%, #fff); color: #5b6168; border: 1px solid rgba(0,0,0,.06); padding: .3rem .55rem; border-radius: 999px; }
 
     /* Parallax elements */
     [data-parallax] { will-change: transform; }
@@ -114,11 +114,12 @@
 /* === Styles from second stylesheet === */
 :root {
       --bg: #fff8f6;
-      --bg-2: #fffefd;
+      --bg-2: #aed9ff;
       --text: #1f2933;
       --muted: #6b7280;
       --accent: #e8796a;
       --accent-2: #ffd9d2;
+      --accent-3:#aed9ff;
       --card: #ffffff;
       --shadow: 0 10px 30px rgba(0,0,0,.08);
       --radius: 16px;
@@ -206,7 +207,7 @@
     .blob2::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse at 50% 50%, rgba(233,127,110,.28), rgba(233,127,110,0));transform:scale(1.15)}
     [data-parallax]{will-change:transform}
     .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.12em}
-    .eyebrow .pill{display:inline-block;width:28px;height:6px;border-radius:999px;background:var(--accent)}
+    .eyebrow .pill{display:inline-block;width:28px;height:6px;border-radius:999px;background:var(--accent-3)}
 
 
     /* Blob for parallax */

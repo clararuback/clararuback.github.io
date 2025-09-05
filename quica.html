@@ -1,73 +1,75 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruback's Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-  </head>
-
-
-    <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="cv.pdf" target="_blank">CV</a></li>
-        <li><a href="contato.html">Contact</a></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Installation – Physics in Everyday Life | Case Study</title>
+  <meta name="description" content="Case study of an interactive installation celebrating the 201st anniversary of the National Museum with physics-based interaction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand" aria-label="Brand">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Maria Clara Ruback</span>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
     </nav>
+  </header>
 
-<header>
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm">
-          <h2>Quica e pega <br/> Ambos&&
-          </h2>
-
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="reveal">Interactive Installation <br> <span style="color:var(--accent)">Physics in Everyday Life</span></h1>
+        <p class="reveal" style="transition-delay:.1s">Celebrating the 201st anniversary of the National Museum with immersive, educational interaction.</p>
+        
+        <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
+      </div>   <div class="case reveal" style="transition-delay:.2s">
+          <img data-parallax data-speed=".12" src="assets/quica3.jpg" alt="Interactive Physics Installation"> 
         </div>
+      
+    </section>
 
-        <div class="col-sm">
-          <figure>
-            <img src="img/quicavid.gif" alt="">
-          </figure>
+    <!-- CONTENT SECTION -->
+    <section>
+      <div class="container content">
+        <h2 class="reveal">About the Project</h2>
+        <p class="reveal" style="transition-delay:.05s">An interactive installation by <strong>Ambos&&</strong>, produced for an event at Sesc Tijuca celebrating the <strong>201st anniversary of the National Museum</strong>, with the theme <em>“Physics in Everyday Life.”</em></p>
+
+        <h2 class="reveal">How It Works</h2>
+        <p class="reveal" style="transition-delay:.05s">The installation uses <strong>Processing</strong> and <strong>Kinect</strong> technology to create an engaging experience: several balls fall on the silhouettes of visitors, behaving according to physical properties like elasticity and weight. Each ball displays arrows indicating <strong>force</strong> and <strong>speed</strong>, turning the interaction into a playful and educational exploration of physics principles.</p>
+
+
+ <h2 class="reveal">Impact</h2>
+        <p class="reveal" style="transition-delay:.05s">The installation successfully combined art, technology, and education, allowing visitors to intuitively understand physics principles through interactive play, making science more accessible and enjoyable.</p>
+
+        <h2 class="reveal">Team</h2>
+        <p class="reveal" style="transition-delay:.05s"><strong>Ambos&&</strong>: Bárbara Castro, Jacqueline Pires, Júlia Fonseca, and Maria Clara Ruback.</p>
+
+       
+
+        
         </div>
       </div>
-</div>
-</header>
+    </section>
 
-<section>
-  <div class="container">
-    <div class="row">
+    <!-- FOOTER -->
+    <footer>
+      <h2 class="reveal">Want to see more case studies?</h2>
+      <a href="index.html" class="cta reveal" style="transition-delay:.05s">Back to Portfolio</a>
+    </footer>
+  </main>
 
-          <div class="col-sm columnleft">
-            <p>
-              Interactive installation by the company Ambos&&, produced for an event at Sesc Tijuca celebrating the 201st anniversary of the National Museum, with the theme "Physics in Everyday Life."<br><br>
-              Coded in Processing, several balls fall behaving according to each of their Physics, such as elasticity and weight, onto the silhouettes of visitors, captured via a Kinect. Each ball has arrows representing its weight force and speed for educational purposes.<br>
-              Ambos&& Team: Bárbara Castro, Jacqueline Pires, Júlia Fonseca, Maria Clara Ruback
-             </p>
- </div>
-          <div class="col-sm">
-          <img src="img/quica2.jpg" alt="quica e pega" >
-        </div>
-      </div>
-        <img src="img/quica1.jpg" alt="volume 2" class="headerProject">
-
-          <img src="img/quica3.jpg" alt="volume 2" class="headerProject">
-      </div>
-
-
-  </div>
-</section>
-
-<footer>
-  <h3>Would you like to know more? <a href="contato.html" class="buttom"> Ask me :)</a></h3>
-  <p>designed and developed by Maria Clara Ruback</p>
-</footer>
-  </body>
+  <script src="scripts.js"></script>
+</body>
 </html>

@@ -1,204 +1,188 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruback's Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-  </head>
-
-
-    <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="cv.pdf" target="_blank">CV</a></li>
-        <li><a href="contato.html">Contact</a></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UX / Product Design Portfolio</title>
+  <meta name="description" content="UX & Product Design portfolio with projects, case studies, and contact." />
+  <!-- Fonts (approximate match to reference; update if needed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="sr" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand" aria-label="Brand">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Maria Clara Ruback</span>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
     </nav>
-<header>
+  </header>
 
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm">
-          <h1>Hi, my <br>name is Ruback
-          </h1>
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div>
+          <h1 class="reveal">Hi, my name is <span>Ruback</span></h1>
+          <p class="tagline reveal" style="transition-delay:.05s">Product and UX/UI designer crafting user‑centred, elegant, and highly functional digital products that align user needs with business outcomes.</p>
+          <div class="chips reveal" style="transition-delay:.1s">
+            <span class="chip">Product Design</span>
+            <span class="chip">UX design & Interaction</span>
+            <span class="chip">Creative Coding</span>
+            <span class="chip">Art & Technology</span>
+          </div>
+        </div>
+<!-- 
+          <div class="me-wrap">
+        <img class="me reveal" data-parallax data-parallax-speed="-0.06" src="https://clararuback.github.io/img/me.png" alt="Clara Ruback"/>
+        <div class="blob2" aria-hidden="true" data-parallax data-parallax-speed="0.08"></div>
+        <div class="eyebrow" style="position:absolute;right:0;bottom:-8px;opacity:.7"><span class="pill"></span> that's me!</div>
+      </div>-->
 
-          <p class="bio">
-            I am a Product and UX/UI Designer with over 5 years of experience creating meaningful, user-centered digital experiences. My work is guided by a deep understanding of user needs, business goals, and the latest design trends. Combining creativity and strategy, I deliver visually appealing, impactful, and highly functional solutions.
 
-          </p>
+        <div class="portrait-wrap">
+          <!-- Replace with your local copy of the image from the reference site: assets/me.png -->
+          <img class="portrait parallax" data-parallax data-speed=".12" src="assets/me.png" alt="Portrait" />
+          <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
+          <div class="eyebrow" style="position:absolute;right:0;bottom:-8px;opacity:.7"><span class="pill"></span> that's me!</div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title"><span class="dot" aria-hidden="true"></span><h2>Selected Projects</h2></div>
+
+        <div class="grid">
+          <!-- Project 1: Fast Check‑in -->
+         
+          <article class="card large reveal" style="transition-delay:.05s">
+             <a href="fast.html">
+            <div class="shine" aria-hidden="true"></div>
+            <img class="thumb" src="assets/telasmobile.png" alt="TOTVS Fast Check-in mobile screens" loading="lazy" />
+            <div class="card-body">
+              <div class="eyebrow">UX Case</div>
+              <h3 class="title">Avoiding hotel queues with TOTVS Fast Check‑in</h3>
+              <p class="desc">We improved the flow and UI, integrated it with the PMS, and delivered a mobile-first experience. Outcome: +400% usage year over year, 49% completion rate, and a 4.2/5 user rating.</p>
+              <div class="meta">
+                <span class="pill">Product Design</span>
+                <span class="pill">Data‑informed</span>
+                <span class="pill">Mobile</span>
+              </div>
+            </div>
+             </a>
+          </article>
+
+
+          <!-- Project 2: PMS SaaS -->
+          <article class="card reveal">
+            <a href="pms.html">
+            <div class="shine" aria-hidden="true"></div>
+            <img class="thumb" src="assets/NovaReserva_desktop.png" alt="PMS reservation flow on desktop mockup" loading="lazy" />
+            <div class="card-body">
+              <div class="eyebrow">Product Design</div>
+              <h3 class="title">TOTVS PMS SaaS</h3>
+              <p class="desc">Ownership of core workflows, feature ideation and testing, and contributions to the design system. Results included ~40% fewer frustration signals. </p>
+              <div class="meta">
+                <span class="pill">Design System</span>
+                <span class="pill">Research</span>
+                <span class="pill">A/B & Metrics</span>
+              </div>
+            </div>
+          </a>
+          </article>
+
+
+
+  <!-- Project 3: Reservation 
+          <article class="card reveal">
+            <a href="reservation.html">
+            <div class="shine" aria-hidden="true"></div>
+            <img class="thumb" src="assets/NovaReserva_desktop.png" alt="PMS reservation flow on desktop mockup" loading="lazy" />
+            <div class="card-body">
+              <div class="eyebrow">UX Case</div>
+              <h3 class="title"> Single and Group Reservations</h3>
+              <p class="desc">Loren ipsum blablabla  </p>
+              <div class="meta">
+                <span class="pill">UX Research</span>
+                <span class="pill">Design Sprint</span>
+                <span class="pill">Usability Testing</span>
+              </div>
+            </div>
+          </a>
+          </article>
+-->
+
+          <!-- Project 4: Raul Mourão books -->
+          <article class="card reveal">
+            <a href="Raul.html">
+
+            <div class="shine" aria-hidden="true"></div>
+            <img class="thumb" src="assets/Volume2 _registro_ManuelAguas_13.jpg" alt="Raul Mourão Volume book cover" loading="lazy" />
+            <div class="card-body">
+              <div class="eyebrow">Editorial</div>
+              <h3 class="title">Raul Mourão — Volume 2 & 3</h3>
+              <p class="desc">Layout and production for two book‑magazines chronicling the artist’s exhibitions and texts on contemporary art.</p>
+              <div class="meta">
+                <span class="pill">Graphic Design</span>
+                <span class="pill">Publication</span>
+                <span class="pill">Art</span>
+              </div>
+            </div>
+          </a>
+          </article>
+
+          
+
+          <!-- Project 5 Quica e pega -->
+          <article class="card large reveal">
+            <a href="quica.html">
+
+            <div class="shine" aria-hidden="true"></div>
+            <img class="thumb" src="assets/quica2.jpg" alt="Interactive installation scene with physics balls" loading="lazy" />
+            <div class="card-body">
+              <div class="eyebrow">Installation</div>
+              <h3 class="title">Quica e pega</h3>
+              <p class="desc">Interactive piece using Processing and Kinect where balls of different weights and speeds respond to silhouettes for an educational, playful experience.</p>
+              <div class="meta">
+                <span class="pill">Creative Coding</span>
+                <span class="pill">Processing</span>
+                <span class="pill">Public Space</span>
+              </div>
+            </div>
+          </a>
+          </article>
 
         </div>
-        <!-- 2nd coluna -->
-        <div class="col-sm columnleft" >
-          <figure>
-          <img src="img/me.png" alt="Clara Ruback" class="face">
-          <figcaption>that's me!</figcaption>
-          </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <footer>
+        <div class="reveal">
+          
+          <h2>Thanks :)</h2>
+          <p>Designed & developed with care. Want to know more or see the full case studies?</p>
+            <h2>Contact</h2>
+            <p>+55 21 98446 5360</p>
+          <a class="cta" href="https://www.linkedin.com/in/clararuback/">LinkedIn</a> <a class="cta" href="mailto:clararuback@gmail.com">Email me</a> 
         </div>
-      </div>
-</div>
-</header>
+      </footer>
+    </section>
+  </main>
 
-<section>
-  <div class="skills">
-<ul class="skills-list">
-  <ul>
-    <li>Product Design</li>
-    <li>UX design & Interaction</li>
-    <li>Creative Coding</li>
-    <li>Art & Technology</li>
-  <a id = projects>
-  </ul>
-</ul>
-</a>
-</div>
-</section>
-<!-- project 1 web-->
-
-<section class="project2web">
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm columnleft">
-        <h3>
-          Avoiding hotel queues with <br>TOTVS Fast Check-in
-        </h3>
-        <p> How we tripled feature usage with simple but strategic changes</p>
-        <a href="fast.html" class="buttom"> View more</a>
-      </div>
-      <!-- 2nd column -->
-      <div class="col-sm columnimg">
-        <figure><img src="img/telasmobile.png">
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- project 2 mobile -->
-<section class="project2mobile">
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-      <div class="col-sm columnimg">
-        <figure><img src="img/telasmobile.png">
-        </figure>
-      </div>
-      <!-- 2nd column -->
-       <div class="col-sm columnleft">
-        <h3>
-          Avoiding hotel queues with <br>TOTVS Fast Check-in
-        </h3>
-        <p>How we tripled feature usage with simple but strategic changes.</p>
-        <a href="fast.html" class="buttom"> View more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- project2 -->
-<section>
-  <div class="container">
-    <div class="row">
-      <!-- 1st coluna -->
-       <div class="col-sm columnimg">
-        <figure><img src="img/NovaReserva_desktop.png">
-        </figure>
-      </div>
-      <!-- 2nd coluna -->
-      <div class="col-sm columnleft">
-        <h3>
-          TOTVS PMS SaaS<br/>
-        </h3>
-        <p>Creating new features and redesigning of core system workflows, using data analysis to generate insights.</p>
-        <a href="PMS.html" class="buttom"> View more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- project 3 web-->
-
-<section class="project2web">
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm columnleft">
-        <h3>
-           Raul Mourão<br/>
-          VOLUME 2 & VOLUME 3
-        </h3>
-        <p> Layout design for the book-magazines VOLUME 2 and VOLUME 3 by brazilian artist Raul Mourão. Projects published in 2020 and 2023, respectively. </p>
-        <a href="volume2.html" class="buttom"> View more</a>
-      </div>
-      <!-- 2nd column -->
-      <div class="col-sm columnimg">
-        <figure><img src="img/Volume2 _registro_ManuelAguas_13.jpg">
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- project 3 mobile -->
-<section class="project2mobile">
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-      <div class="col-sm columnimg">
-        <figure><img src="img/Volume2 _registro_ManuelAguas_13.jpg">
-        </figure>
-      </div>
-      <!-- 2nd column -->
-       <div class="col-sm columnleft">
-        <h3>
-          Raul Mourão<br/>
-          VOLUME 2
-        </h3>
-        <p>Layout design for the book-magazines VOLUME 2 and VOLUME 3 by brazilian artist Raul Mourão. Projects published in 2020 and 2023, respectively.</p>
-        <a href="volume2.html" class="buttom"> View more </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- project 4  -->
-
-<section>
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm columnimg">
-        <figure><img src="img/quica1.jpg">
-
-        </figure>
-      </div>
-      <!-- 2nd column -->
-       <div class="col-sm columnleft">
-          <h3>
-            Quica e pega
-          </h3>
-          <p>Interactive installation by Ambos&&, produced for Sesc Tijuca's event celebrating the 201st anniversary of the National Museum of Brazil, with the theme "Physics in Everyday Life." </p>
-          <a href="quica.html" class="buttom"> View more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<footer>
-  <h3>thanks :)</h3>
-  <p>designed and developed by Maria Clara Ruback</p>
-</footer>
-  </body>
+  <script src="scripts.js"></script>
+</body>
 </html>

@@ -1,111 +1,88 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruback's Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-  </head>
-
-
-    <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="cv.pdf" target="_blank">CV</a></li>
-        <li><a href="contato.html">Contact</a></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avoiding hotel queues with TOTVS Fast Check-in | Case Study</title>
+  <meta name="description" content="UX case study on improving hotel check-in experience with TOTVS Fast Check-in." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand" aria-label="Brand">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Maria Clara Ruback</span>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
     </nav>
+  </header>
 
-<header>
-  <div class="container">
-    <div class="row">
-      <!-- 1st column -->
-       <div class="col-sm">
-          <h2>Avoiding hotel queues with <br>TOTVS Fast Check-in
-          </h2>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="reveal">Avoiding hotel queues with <br><span style="color:var(--accent)">TOTVS Fast Check-in</span></h1>
+        <p class="reveal" style="transition-delay:.1s">Redesigning a feature to improve guest experience and operational efficiency.</p>
+        <div class="reveal" style="transition-delay:.2s">
+          <img data-parallax data-speed=".12" src="assets/telasmobile.png" alt="TOTVS Fast Check-in screens">
+        </div>
+        <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container content">
+        <h2 class="reveal">The Challenge</h2>
+        <p class="reveal" style="transition-delay:.05s">Brazilian legislation requires extensive information during check-in, which consumes significant time for hotel staff and guests, leading to long queues during peak periods.</p>
+
+        <h2 class="reveal">The Solution</h2>
+        <p class="reveal" style="transition-delay:.05s">O TOTVS Fast Check-in was created to collect all mandatory data before the guest's arrival, allowing them to simply present their ID and proceed directly to their room.</p>
+
+        <h2 class="reveal">Primary Issues</h2>
+        <ul class="reveal" style="transition-delay:.05s">
+          <li>Usability and development flaws</li>
+          <li>Poor integration with the PMS (Property Management System)</li>
+          <li>Available only in the desktop version</li>
+        </ul>
+
+        <h2 class="reveal">Our Intervention</h2>
+        <p class="reveal" style="transition-delay:.05s">By analyzing user behavior via DataDog, we implemented several improvements to the flow and interface. After those fixes, we closely monitored the functionality, engaging the team to work with data.</p>
+
+        <h2 class="reveal">Results</h2>
+        <div class="metrics reveal" style="transition-delay:.05s">
+          <div class="metric"><h3>+400%</h3><p>Usage (Fev/24 vs Fev/23)</p></div>
+          <div class="metric"><h3>49%</h3><p>Conversion rate</p></div>
+          <div class="metric"><h3>4.2/5</h3><p>User rating</p></div>
         </div>
 
-        <div class="col-sm">
-          <figure>
-<img src="img/telasmobile.png">
-          </figure>
+        <h2 class="reveal">Impact</h2>
+        <p class="reveal" style="transition-delay:.05s">O TOTVS Fast Check-in became one of the most valued features of TOTVS PMS, adopted by major hotel chains and significantly improving the experience for both guests and staff.</p>
+
+        <h2 class="reveal">Key Takeaways</h2>
+        <div class="takeaways reveal" style="transition-delay:.05s">
+          <ul>
+            <li>Data driven decisions – Analytics (DataDog) were crucial for prioritizing improvements.</li>
+            <li>Design is not just about looks – Integration with PMS and cross-platform experience were essential for success.</li>
+            <li>Measurable impact – The solution not only improved UX but also generated operational savings for hotels.</li>
+          </ul>
         </div>
       </div>
-</div>
-</header>
+    </section>
 
-<section>
-  <div class="container">
-    <div class="row">
+    <footer>
+      <h2 class="reveal">Want to see more case studies?</h2>
+      <a href="index.html" class="cta reveal" style="transition-delay:.05s">Back to Portfolio</a>
+    </footer>
+  </main>
 
-          <div class="col-sm columnimg">
-             
-        <h3>The Challenge</h3>
-        <p>Brazilian legislation requires extensive information during check-in, which consumes significant time for hotel staff and guests, leading to long queues during peak periods.</p>
-    </div>
-    <div class="col-sm columnimg">
-    <h3>The Solution</h3>
-    <p>O <strong>TOTVS Fast Check-in</strong> was created to collect all mandatory data before the guest's arrival, allowing them to simply present their ID and proceed directly to their room.</p>
-    </div>
-    <div class="highlight">
-        <h3>Primary issues</h3>
-        <p>The feature already existed but was underutilized and had several issues:</p>
-        <ul>
-            <li>Usability and development flaws</li>
-            <li>Poor integration with the PMS (Property Management System)</li>
-            <li>Available only in the desktop version</li>
-        </ul>
-    </div>
-  
-    <h3>Our Intervention</h3>
-    <p>By analyzing user behavior via <strong>DataDog</strong>, we implemented several improvements to the flow and interface. After those fixes, we closely monitored the functionality, engaging the team to work with data.</p>
-    
-  
-        
-
-    <h3>Results</h3>
-    <p>After the redesign and continuous monitoring, the results were:</p>
-    
-    <div class="results">
-        <div class="result-card">
-            <div class="result-value">+400% in usage</div>
-            <p>(fev/2024 vs. fev/2023)</p>
-        </div>
-        <div class="result-card">
-            <div class="result-value">49%</div>
-            <p> Conversion rate (guests who completed digital check-in)</p>
-        </div>
-        <div class="result-card">
-            <div class="result-value">4,2/5</div>
-            <p>user rating</p>
-        </div>
-    </div>
-
-  </div>
-   <h3>Impact</h3>
-    <p>O <span class="highlight"> TOTVS Fast Check-in</span> became one of the most valued features of TOTVS PMS, adopted by major hotel chains and significantly improving the experience for both guests and staff.</p>
-
-    <div class="takeaways">
-        <h3>Key Takeaways</h3>
-        <ul>
-            <li><strong>Data driven decisions</strong> – Analytics (DataDog) were crucial for prioritizing improvements.</li>
-            <li><strong>Design is not just about looks</strong> – Integration with PMS and cross-platform experience were essential for success.</li>
-            <li><strong>Measurable impact</strong> – The solution not only improved UX but also generated operational savings for hotels.</li>
-        </ul>
-    </div>   
-    
-</section>
-
-<footer>
-  <h3>Would you like to know more? <a href="contato.html" class="buttom"> Ask me :)</a></h3>
-  <p>designed and developed by Maria Clara Ruback</p>
-</footer>
-  </body>
+  <script src="scripts.js"></script>
+</body>
 </html>

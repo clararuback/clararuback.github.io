@@ -1,0 +1,59 @@
+/* Portfólio UX — generated from tokens.json */
+:root, [data-theme="light"] {
+  --paper: #f4f1ea;
+  --surface: #e9e5dc;
+  --ink: #141414;
+  --muted: #5c5a55;
+  --hairline: #d4cfc4;
+  --red: #c8321e;
+  --blue: #1d4f9b;
+  --yellow: #f0b81b;
+  --accent: var(--red);
+  --on-accent: #ffffff;
+  --console: #141619;
+  --console-ink: #e8e6e1;
+  --console-muted: #8b9198;
+  --signal: #2af5c9;
+  --grid: #d9d3c7;
+}
+[data-theme="dark"] {
+  --paper: #111111;
+  --surface: #1c1c1c;
+  --ink: #f2efe8;
+  --muted: #a19e97;
+  --hairline: #333333;
+  --red: #f0583c;
+  --blue: #7aa3ef;
+  --yellow: #f2c230;
+  --accent: var(--red);
+  --on-accent: #111111;
+  --console: #1f2428;
+  --console-ink: #e8e6e1;
+  --console-muted: #8b9198;
+  --signal: #2af5c9;
+  --grid: #262626;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-8: 32px;
+  --space-16: 64px;
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-full: 999px;
+  --font-display: "Jost", "Futura", "Century Gothic", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+}
+.display { font-family: var(--font-display); font-size: 72px; line-height: 0.95; font-weight: 500; }
+.h1 { font-family: var(--font-display); font-size: 48px; line-height: 1.05; font-weight: 500; }
+.h2 { font-family: var(--font-display); font-size: 32px; line-height: 1.15; font-weight: 500; }
+.h3 { font-family: var(--font-sans); font-size: 20px; line-height: 28px; font-weight: 600; }
+.body-lg { font-family: var(--font-sans); font-size: 18px; line-height: 30px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.caption { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; }
+.label { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 500; }
+.code { font-family: var(--font-mono); font-size: 14px; line-height: 22px; font-weight: 400; }
+.data { font-family: var(--font-mono); font-size: 28px; line-height: 32px; font-weight: 500; }

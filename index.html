@@ -1,184 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UX / Product Design Portfolio</title>
-  <meta name="description" content="UX & Product Design portfolio with projects, case studies, and contact." />
-  <!-- Fonts (approximate match to reference; update if needed) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clara Ruback — Product &amp; UX/UI Designer</title>
+<link rel="stylesheet" href="assets/portfolio/tokens.css">
+<link rel="stylesheet" href="assets/portfolio/bundle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:var(--paper)}
+a{color:var(--red)}a:hover{color:var(--ink)}
+.pux-case{max-width:none !important;height:100%}
+.pux-case-thumb{border-bottom:0 !important}
+</style>
+<style>img{max-width:100%}</style>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="assets/portfolio/bundle.js"></script>
 </head>
 <body>
-  <a class="sr" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+<div style="background: var(--paper); color: var(--ink); font-family: var(--font-sans); min-height: 100%;">
 
-  <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-inner container">
-        <div>
-          <h1 class="reveal">Hi, my name is <span>Ruback</span></h1>
-          <p class="tagline reveal" style="transition-delay:.05s">Product and UX/UI designer crafting user‑centred, elegant, and highly functional digital products that align user needs with business outcomes.</p>
-          <div class="chips reveal" style="transition-delay:.1s">
-            <span class="chip">Product Design</span>
-            <span class="chip">UX design & Interaction</span>
-            <span class="chip">Creative Coding</span>
-            <span class="chip">Art & Technology</span>
-          </div>
-        </div>
-<!-- 
-          <div class="me-wrap">
-        <img class="me reveal" data-parallax data-parallax-speed="-0.06" src="https://clararuback.github.io/img/me.png" alt="Clara Ruback"/>
-        <div class="blob2" aria-hidden="true" data-parallax data-parallax-speed="0.08"></div>
-        <div class="eyebrow" style="position:absolute;right:0;bottom:-8px;opacity:.7"><span class="pill"></span> that's me!</div>
-      </div>-->
+<div data-cmp="NavBar" data-attrs="{&quot;brand&quot;: &quot;Ruback&quot;, &quot;homeHref&quot;: &quot;#home&quot;, &quot;navLabel&quot;: &quot;Main&quot;}" data-holes="{&quot;links&quot;: &quot;links&quot;}" style="display: contents;">
+<div style="display: inline-flex; border: 1px solid var(--ink);" role="group" aria-label="Language">
+<span aria-current="true" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; background: var(--console); color: var(--console-ink);">EN</span>
+<a href="pt/index.html" lang="pt-BR" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; color: var(--ink); text-decoration: none;">PT</a>
+</div>
+</div>
 
+<main id="home" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box;">
 
-        <div class="portrait-wrap">
-          <!-- Replace with your local copy of the image from the reference site: assets/me.png -->
-          <img class="portrait parallax" data-parallax data-speed=".12" src="assets/me.png" alt="Portrait" />
-          <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
-          <div class="eyebrow" style="position:absolute;right:0;bottom:-8px;opacity:.7"><span class="pill"></span> that's me!</div>
-        </div>
-      </div>
-    </section>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; padding: 64px 0;">
+<div style="flex: 7 1 520px; min-width: 0;">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{}" style="display: contents;">Product &amp; UX/UI Designer</div>
+<h1 style="font: 500 72px/0.95 var(--font-display); letter-spacing: -0.02em; margin: 16px 0 32px;">Hi, I’m <span style="color: var(--red);">Clara Ruback</span>.</h1>
+<p style="font: 400 18px/30px var(--font-sans); color: var(--muted); max-width: 34em; margin: 0 0 16px;">Product and UX/UI designer crafting user‑centred, elegant, and highly functional digital products that align user needs with business outcomes.</p>
+<p style="font: 400 18px/30px var(--font-sans); color: var(--ink); max-width: 34em; margin: 0 0 32px;">6 years at TOTVS designing B2B SaaS for hotels — responsible for the UX of TOTVS PMS, from research to shipped features.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+<div data-cmp="Button" data-attrs="{&quot;href&quot;: &quot;#projects&quot;}" data-holes="{}" style="display: contents;">See projects</div>
+<div data-cmp="Button" data-attrs="{&quot;variant&quot;: &quot;secondary&quot;, &quot;href&quot;: &quot;https://clararuback.github.io/assets/cv.pdf&quot;}" data-holes="{}" style="display: contents;">Download CV</div>
+</div>
+</div>
+<div style="flex: 5 1 360px; position: relative; height: 440px; min-width: 0; background-image: radial-gradient(var(--grid) 1.5px, transparent 1.5px); background-size: 32px 32px;" aria-hidden="true">
+<div style="position: absolute; left: 0; top: 0; width: 224px; height: 224px; background: var(--red);"></div>
+<div style="position: absolute; right: 32px; top: 32px; width: 128px; height: 128px; border-radius: 999px; background: var(--blue);"></div>
+<div style="position: absolute; left: 160px; top: 160px; width: 128px; height: 64px; border-radius: 999px 999px 0 0; background: var(--yellow);"></div>
+<div data-cmp="Readout" data-attrs="{&quot;title&quot;: &quot;ruback.profile&quot;, &quot;status&quot;: &quot;Online&quot;}" data-holes="{&quot;rows&quot;: &quot;profile&quot;}" style="position: absolute; right: 0; bottom: 0; width: 340px;"></div>
+</div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <div class="section-title"><span class="dot" aria-hidden="true"></span><h2>Selected Projects</h2></div>
+<section style="padding: 64px 0;">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;one&quot;}" style="display: contents;">What I do</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 32px;">
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">01</div>
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Product Design</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Core workflows, feature ideation and testing, from problem to delivery.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">02</div>
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">UX design &amp; Interaction</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Flows and interfaces that align user needs with business outcomes.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">03</div>
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Creative Coding</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Interactive pieces and prototypes with Processing and Kinect.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">04</div>
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Art &amp; Technology</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Installations and publications around contemporary art.</p>
+</div>
+</div>
+</section>
 
-        <div class="grid">
-          <!-- Project 1: Fast Check‑in -->
-         
-          <article class="card large reveal" style="transition-delay:.05s">
-             <a href="fast.html">
-            <div class="shine" aria-hidden="true"></div>
-            <img class="thumb" src="assets/telasmobile.png" alt="TOTVS Fast Check-in mobile screens" loading="lazy" />
-            <div class="card-body">
-              <div class="eyebrow">UX Case</div>
-              <h3 class="title">Avoiding hotel queues with TOTVS Fast Check‑in</h3>
-              <p class="desc">We improved the flow and UI, integrated it with the PMS, and delivered a mobile-first experience. Outcome: +400% usage year over year, 49% completion rate, and a 4.2/5 user rating.</p>
-              <div class="meta">
-                <span class="pill">Product Design</span>
-                <span class="pill">Data‑informed</span>
-                <span class="pill">Mobile</span>
-              </div>
-            </div>
-             </a>
-          </article>
+<section id="projects" style="padding: 64px 0;">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;two&quot;}" style="display: contents;">Product work</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 32px; margin-top: 32px;">
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;fast.html&quot;, &quot;image&quot;: &quot;assets/portfolio/f5ed6e6b46574d41717da29c9429e776.png&quot;, &quot;shape&quot;: &quot;square&quot;, &quot;tone&quot;: &quot;red&quot;, &quot;meta&quot;: &quot;UX case · TOTVS&quot;, &quot;title&quot;: &quot;Avoiding hotel queues with TOTVS Fast Check‑in&quot;, &quot;summary&quot;: &quot;As the sole designer, I turned a little-used, desktop-only pre-check-in into a mobile-first feature — +400% usage YoY, 49% completion, 4.2/5 — and then scaled it into a white-label product.&quot;}" data-holes="{&quot;index&quot;: &quot;one&quot;, &quot;tags&quot;: &quot;tags1&quot;}" style="display: contents;"></div>
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;fatura-hotel.html&quot;, &quot;image&quot;: &quot;assets/portfolio/e1f60b525aa10d9a52ac274aa823fe6e.png&quot;, &quot;shape&quot;: &quot;square&quot;, &quot;tone&quot;: &quot;red&quot;, &quot;meta&quot;: &quot;Product design · TOTVS SmartX&quot;, &quot;title&quot;: &quot;Fatura Hotel: from invoice to delivery, in one screen&quot;, &quot;summary&quot;: &quot;A corporate billing module for hotel chains. I owned the Billing tab — unifying two screens around the sending status, with honest portal delivery — and set up the usability test with clients.&quot;}" data-holes="{&quot;index&quot;: &quot;two&quot;, &quot;tags&quot;: &quot;tags6&quot;}" style="display: contents;"></div>
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;vulpes-ds.html&quot;, &quot;image&quot;: &quot;assets/portfolio/b254bae2457aacea67656ffbb8922863.jpg&quot;, &quot;shape&quot;: &quot;square&quot;, &quot;tone&quot;: &quot;blue&quot;, &quot;meta&quot;: &quot;Design system · TOTVS&quot;, &quot;title&quot;: &quot;Vulpes DS: one design system for six products&quot;, &quot;summary&quot;: &quot;The design system now used by all six TOTVS Hospitality &amp; Food products. I designed its typography guide, form and vertical stepper templates, and calendar component.&quot;}" data-holes="{&quot;index&quot;: &quot;three&quot;, &quot;tags&quot;: &quot;tags5&quot;}" style="display: contents;"></div>
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;reservas.html&quot;, &quot;image&quot;: &quot;assets/portfolio/a07ccf6e6068f60eb1e078a86af7742f.png&quot;, &quot;shape&quot;: &quot;circle&quot;, &quot;tone&quot;: &quot;yellow&quot;, &quot;meta&quot;: &quot;Research + product design · TOTVS PMS&quot;, &quot;title&quot;: &quot;Redesigning how hotels create and edit reservations&quot;, &quot;summary&quot;: &quot;From a discovery with six hotels to new creation and editing flows — editing rated 4.6/5 — and how I adapted rate adjustment when a key integration was deprioritized.&quot;}" data-holes="{&quot;index&quot;: &quot;four&quot;, &quot;tags&quot;: &quot;tags7&quot;}" style="display: contents;"></div>
+</div>
+</section>
 
+<section style="padding: 64px 0;">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;three&quot;}" style="display: contents;">Impact</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 32px;">
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;+400%&quot;, &quot;label&quot;: &quot;Usage, year over year&quot;, &quot;detail&quot;: &quot;TOTVS Fast Check‑in&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;49%&quot;, &quot;label&quot;: &quot;Completion rate&quot;, &quot;detail&quot;: &quot;TOTVS Fast Check‑in&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.2/5&quot;, &quot;label&quot;: &quot;User rating&quot;, &quot;detail&quot;: &quot;TOTVS Fast Check‑in&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;−40%&quot;, &quot;label&quot;: &quot;Frustration signals&quot;, &quot;detail&quot;: &quot;TOTVS PMS SaaS&quot;}" data-holes="{&quot;onConsole&quot;: &quot;yes&quot;}" style="display: contents;"></div>
+</div>
+</section>
 
-          <!-- Project 2: PMS SaaS -->
-          <article class="card reveal">
-            <a href="pms_saas.html">
-            <div class="shine" aria-hidden="true"></div>
-            <img class="thumb" src="assets/NovaReserva_desktop.png" alt="PMS reservation flow on desktop mockup" loading="lazy" />
-            <div class="card-body">
-              <div class="eyebrow">Product Design</div>
-              <h3 class="title">TOTVS PMS SaaS</h3>
-              <p class="desc">Ownership of core workflows, feature ideation and testing, and contributions to the design system. Results included ~40% fewer frustration signals. </p>
-              <div class="meta">
-                <span class="pill">Design System</span>
-                <span class="pill">Research</span>
-                <span class="pill">A/B & Metrics</span>
-              </div>
-            </div>
-          </a>
-          </article>
+<section style="padding: 64px 0;">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;four&quot;}" style="display: contents;">Other work · Art &amp; technology</div>
+<p style="font: 400 18px/30px var(--font-sans); color: var(--muted); max-width: 40em; margin: 16px 0 0;">Editorial design and creative coding — where my eye for detail and interaction comes from.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 32px; margin-top: 32px;">
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;raul.html&quot;, &quot;image&quot;: &quot;assets/portfolio/1d71f66193fbf61d1fc9b1ea578fcd66.png&quot;, &quot;shape&quot;: &quot;half&quot;, &quot;tone&quot;: &quot;yellow&quot;, &quot;meta&quot;: &quot;Editorial&quot;, &quot;title&quot;: &quot;Raul Mourão — Volume 2 &amp; 3&quot;, &quot;summary&quot;: &quot;Layout and production for two book‑magazines chronicling the artist’s exhibitions and texts on contemporary art.&quot;}" data-holes="{&quot;index&quot;: &quot;five&quot;, &quot;tags&quot;: &quot;tags3&quot;}" style="display: contents;"></div>
+<div data-cmp="CaseCard" data-attrs="{&quot;href&quot;: &quot;quica.html&quot;, &quot;image&quot;: &quot;assets/portfolio/95f49dd44d73c28c848814e151242974.jpg&quot;, &quot;shape&quot;: &quot;circle&quot;, &quot;tone&quot;: &quot;red&quot;, &quot;meta&quot;: &quot;Installation&quot;, &quot;title&quot;: &quot;Quica e pega&quot;, &quot;summary&quot;: &quot;Interactive piece using Processing and Kinect where balls of different weights and speeds respond to silhouettes.&quot;}" data-holes="{&quot;index&quot;: &quot;six&quot;, &quot;tags&quot;: &quot;tags4&quot;}" style="display: contents;"></div>
+</div>
+</section>
 
+</main>
 
+<section id="contact" style="background: var(--console); color: var(--console-ink); padding: 64px 32px;">
+<div style="max-width: 1136px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between;">
+<div style="flex: 7 1 480px; min-width: 0;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--console-muted);">// CONTACT</div>
+<h2 style="font: 500 48px/1.05 var(--font-display); letter-spacing: -0.02em; margin: 16px 0 0;">Thanks :) Want to know more or see the full case studies?</h2>
+</div>
+<div style="flex: 5 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+<code style="font: 400 14px/22px var(--font-mono); color: var(--console-muted);">$ contact --open <span style="color: var(--signal);">→ email · linkedin · cv</span></code>
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+<div data-cmp="Button" data-attrs="{&quot;href&quot;: &quot;mailto:clararuback@gmail.com&quot;}" data-holes="{}" style="display: contents;">Email me</div>
+<a href="https://www.linkedin.com/in/clararuback/" style="display: inline-flex; align-items: center; font: 500 15px/20px var(--font-sans); padding: 12px 20px; border: 2px solid var(--console-ink); color: var(--console-ink); text-decoration: none;">LinkedIn</a>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- Project 3: Reservation 
-          <article class="card reveal">
-            <a href="reservation.html">
-            <div class="shine" aria-hidden="true"></div>
-            <img class="thumb" src="assets/NovaReserva_desktop.png" alt="PMS reservation flow on desktop mockup" loading="lazy" />
-            <div class="card-body">
-              <div class="eyebrow">UX Case</div>
-              <h3 class="title"> Single and Group Reservations</h3>
-              <p class="desc">Loren ipsum blablabla  </p>
-              <div class="meta">
-                <span class="pill">UX Research</span>
-                <span class="pill">Design Sprint</span>
-                <span class="pill">Usability Testing</span>
-              </div>
-            </div>
-          </a>
-          </article>
--->
+<footer style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; padding: 16px 32px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--hairline);">
+<span>© 2026 Clara Ruback</span>
+<span>Designed &amp; developed with care</span>
+</footer>
+</div>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7,
+      tags7: ['User Research', 'Product Design', 'Usability testing'],
+      links: [
+        { label: 'Home', href: '#home', current: true },
+        { label: 'Projects', href: '#projects' },
+        { label: 'CV', href: 'https://clararuback.github.io/assets/cv.pdf' },
+        { label: 'Contact', href: '#contact' }
+      ],
+      profile: [
+        { k: 'ROLE', v: 'Product designer · TOTVS' },
+        { k: 'FOCUS', v: 'Product · UX/UI' },
+        { k: 'ALSO', v: 'Art & technology' },
+        { k: 'FAST CHECK-IN', v: '+400% usage YoY', highlight: true }
+      ],
+      tags6: ['Product Design', 'B2B SaaS', 'Usability testing'],
+      tags5: ['Design System', 'Templates', 'DesignOps'],
+      tags1: ['Product Design', 'Mobile-first', 'White label'],
+      tags2: ['Design System', 'Research', 'A/B & Metrics'],
+      tags3: ['Graphic Design', 'Publication', 'Art'],
+      tags4: ['Creative Coding', 'Processing', 'Public Space']
+    };
+  }
+}
 
-          <!-- Project 4: Raul Mourão books -->
-          <article class="card reveal">
-            <a href="Raul.html">
+(function(){
+  var h = React.createElement;
+  function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
+  window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
+  window.DCLogic.prototype.setState = function(){};
+  var vals = (typeof Component === 'function') ? new Component({}).renderVals() : {};
+  document.querySelectorAll('[data-cmp]').forEach(function(el){
+    var C = window.PortfolioUX && window.PortfolioUX[el.getAttribute('data-cmp')];
+    if (!C) return;
+    var props = JSON.parse(el.getAttribute('data-attrs') || '{}');
+    var holes = JSON.parse(el.getAttribute('data-holes') || '{}');
+    Object.keys(holes).forEach(function(p){ props[p] = vals[holes[p]]; });
+    var inner = el.innerHTML.trim(), child = null;
+    if (inner) child = inner.indexOf('<') === -1 ? decode(inner)
+      : h('span', { style: { display: 'contents' }, dangerouslySetInnerHTML: { __html: inner } });
+    ReactDOM.createRoot(el).render(h(C, props, child));
+  });
+})();
 
-            <div class="shine" aria-hidden="true"></div>
-            <img class="thumb" src="assets/Volume2 _registro_ManuelAguas_13.jpg" alt="Raul Mourão Volume book cover" loading="lazy" />
-            <div class="card-body">
-              <div class="eyebrow">Editorial</div>
-              <h3 class="title">Raul Mourão — Volume 2 & 3</h3>
-              <p class="desc">Layout and production for two book‑magazines chronicling the artist’s exhibitions and texts on contemporary art.</p>
-              <div class="meta">
-                <span class="pill">Graphic Design</span>
-                <span class="pill">Publication</span>
-                <span class="pill">Art</span>
-              </div>
-            </div>
-          </a>
-          </article>
-
-          
-
-          <!-- Project 5 Quica e pega -->
-          <article class="card large reveal">
-            <a href="quica.html">
-
-            <div class="shine" aria-hidden="true"></div>
-            <img class="thumb" src="assets/quica2.jpg" alt="Interactive installation scene with physics balls" loading="lazy" />
-            <div class="card-body">
-              <div class="eyebrow">Installation</div>
-              <h3 class="title">Quica e pega</h3>
-              <p class="desc">Interactive piece using Processing and Kinect where balls of different weights and speeds respond to silhouettes for an educational, playful experience.</p>
-              <div class="meta">
-                <span class="pill">Creative Coding</span>
-                <span class="pill">Processing</span>
-                <span class="pill">Public Space</span>
-              </div>
-            </div>
-          </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <footer>
-        <div class="reveal">
-          
-          <h2>Thanks :)</h2>
-          <p>Designed & developed with care. Want to know more or see the full case studies?</p>
-            <h2>Contact</h2>
-            <p>+55 21 98446 5360</p>
-          <a class="cta" href="https://www.linkedin.com/in/clararuback/">LinkedIn</a> <a class="cta" href="mailto:clararuback@gmail.com">Email me</a> 
-        </div>
-      </footer>
-    </section>
-  </main>
-
-  <script src="scripts.js"></script>
+</script>
 </body>
 </html>

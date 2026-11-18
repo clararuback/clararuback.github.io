@@ -1,71 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interactive Installation – Physics in Everyday Life | Case Study</title>
-  <meta name="description" content="Case study of an interactive installation celebrating the 201st anniversary of the National Museum with physics-based interaction." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quica e pega — Interactive installation</title>
+<link rel="stylesheet" href="assets/portfolio/tokens.css">
+<link rel="stylesheet" href="assets/portfolio/bundle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:var(--paper)}
+a{color:var(--red)}a:hover{color:var(--ink)}
+.pux-readout{max-width:none !important}
+</style>
+<style>img{max-width:100%}</style>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="assets/portfolio/bundle.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+<div style="background: var(--paper); color: var(--ink); font-family: var(--font-sans); min-height: 100%;">
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="reveal">Interactive Installation <br> <span style="color:var(--accent)">Physics in Everyday Life</span></h1>
-        <p class="reveal" style="transition-delay:.1s">Celebrating the 201st anniversary of the National Museum with immersive, educational interaction.</p>
-        
-        <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
-      </div>   <div class="case reveal" style="transition-delay:.2s">
-          <img data-parallax data-speed=".12" src="assets/quica3.jpg" alt="Interactive Physics Installation"> 
-        </div>
-      
-    </section>
+<div data-cmp="NavBar" data-attrs="{&quot;brand&quot;: &quot;Ruback&quot;, &quot;homeHref&quot;: &quot;index.html&quot;, &quot;navLabel&quot;: &quot;Main&quot;}" data-holes="{&quot;links&quot;: &quot;links&quot;}" style="display: contents;">
+<div style="display: inline-flex; border: 1px solid var(--ink);" role="group" aria-label="Language">
+<span aria-current="true" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; background: var(--console); color: var(--console-ink);">EN</span>
+<a href="pt/quica.html" lang="pt-BR" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; color: var(--ink); text-decoration: none;">PT</a>
+</div>
+</div>
 
-    <!-- CONTENT SECTION -->
-    <section>
-      <div class="container content">
-        <h2 class="reveal">About the Project</h2>
-        <p class="reveal" style="transition-delay:.05s">An interactive installation by <strong>Ambos&&</strong>, produced for an event at Sesc Tijuca celebrating the <strong>201st anniversary of the National Museum</strong>, with the theme <em>“Physics in Everyday Life.”</em></p>
+<main style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box;">
 
-        <h2 class="reveal">How It Works</h2>
-        <p class="reveal" style="transition-delay:.05s">The installation uses <strong>Processing</strong> and <strong>Kinect</strong> technology to create an engaging experience: several balls fall on the silhouettes of visitors, behaving according to physical properties like elasticity and weight. Each ball displays arrows indicating <strong>force</strong> and <strong>speed</strong>, turning the interaction into a playful and educational exploration of physics principles.</p>
+<header style="padding: 48px 0 32px;">
+<a href="index.html" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-decoration: none;">← All projects</a>
+<div style="margin-top: 32px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;four&quot;}" style="display: contents;">Installation · Ambos&amp;&amp;</div></div>
+<h1 style="font: 500 72px/0.95 var(--font-display); letter-spacing: -0.02em; margin: 16px 0 24px; max-width: 14em;">Quica e pega: physics in everyday life</h1>
+<p style="font: 400 20px/32px var(--font-sans); color: var(--muted); max-width: 36em; margin: 0 0 24px;">Celebrating the 201st anniversary of the National Museum with immersive, educational interaction.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Creative Coding</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Public Space</div>
+<div data-cmp="Tag" data-attrs="{&quot;tone&quot;: &quot;console&quot;}" data-holes="{}" style="display: contents;">Processing</div>
+<div data-cmp="Tag" data-attrs="{&quot;tone&quot;: &quot;console&quot;}" data-holes="{}" style="display: contents;">Kinect</div>
+</div>
+</header>
 
+<section style="padding: 32px 0 64px;">
+<figure style="margin: 0; position: relative; background: var(--console);">
+<img src="assets/portfolio/95f49dd44d73c28c848814e151242974.jpg" alt="Quica e pega installation: visitors interacting with falling balls projected over their silhouettes" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9.4; object-fit: cover;">
+<figcaption style="position: absolute; left: 16px; top: 16px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--signal); background: var(--console); padding: 4px 8px;">● KINECT · TRACKING</figcaption>
+</figure>
+</section>
 
- <h2 class="reveal">Impact</h2>
-        <p class="reveal" style="transition-delay:.05s">The installation successfully combined art, technology, and education, allowing visitors to intuitively understand physics principles through interactive play, making science more accessible and enjoyable.</p>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;one&quot;}" style="display: contents;">About the project</div></div>
+<p style="flex: 3 1 520px; min-width: 0; font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">An interactive installation by Ambos&amp;&amp;, produced for an event at Sesc Tijuca celebrating the 201st anniversary of the National Museum, with the theme “Physics in Everyday Life.”</p>
+</section>
 
-        <h2 class="reveal">Team</h2>
-        <p class="reveal" style="transition-delay:.05s"><strong>Ambos&&</strong>: Bárbara Castro, Jacqueline Pires, Júlia Fonseca, and Maria Clara Ruback.</p>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;two&quot;}" style="display: contents;">How it works</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">The installation uses Processing and Kinect to create an engaging experience: balls fall on visitors’ silhouettes, behaving according to physical properties like elasticity and weight. Each ball displays arrows indicating force and speed, turning the interaction into a playful exploration of physics.</p>
+<div data-cmp="Readout" data-attrs="{&quot;title&quot;: &quot;quica.pde / params&quot;, &quot;status&quot;: &quot;Live&quot;}" data-holes="{&quot;rows&quot;: &quot;params&quot;}" style="display: contents;"></div>
+</div>
+</section>
 
-       
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 32px; padding: 32px 0 64px;">
+<img src="assets/portfolio/93f124305662ad86c28155dc7771cef4.jpg" alt="Quica e pega installation in use (2 of 3)" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9.4; object-fit: cover;">
+<img src="assets/portfolio/eb22c8be9d721959a5650448fda3f751.jpg" alt="Quica e pega installation in use (3 of 3)" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9.4; object-fit: cover;">
+</div>
 
-        
-        </div>
-      </div>
-    </section>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;three&quot;}" style="display: contents;">Impact</div></div>
+<p style="flex: 3 1 520px; min-width: 0; font: 500 28px/1.25 var(--font-display); margin: 0; max-width: 28em;">The installation combined art, technology and education, letting visitors understand physics through play — making science more accessible and enjoyable.</p>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-      <h2 class="reveal">Want to see more case studies?</h2>
-      <a href="index.html" class="cta reveal" style="transition-delay:.05s">Back to Portfolio</a>
-    </footer>
-  </main>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0 64px; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;four&quot;}" style="display: contents;">Team</div></div>
+<p style="flex: 3 1 520px; min-width: 0; font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;"><strong style="font-weight: 600">Ambos&amp;&amp;:</strong> Bárbara Castro and Maria Clara Ruback.</p>
+</section>
 
-  <script src="scripts.js"></script>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between; padding: 48px 0 64px; border-top: 2px solid var(--ink);">
+<div>
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--muted);">BACK TO START → CASE_01</div>
+<a href="fast.html" style="display: inline-block; font: 500 40px/1.1 var(--font-display); color: var(--ink); text-decoration: none; margin-top: 8px;">TOTVS Fast Check‑in <span style="color: var(--red);">→</span></a>
+</div>
+<div data-cmp="Button" data-attrs="{&quot;variant&quot;: &quot;secondary&quot;, &quot;href&quot;: &quot;index.html&quot;}" data-holes="{}" style="display: contents;">Back to portfolio</div>
+</section>
+</main>
+
+<footer style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; padding: 16px 32px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--hairline);">
+<span>© 2026 Ruback</span>
+<a href="mailto:clararuback@gmail.com" style="color: var(--muted);">clararuback@gmail.com</a>
+</footer>
+</div>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      one: 1, two: 2, three: 3, four: 4,
+      links: [
+        { label: 'Home', href: 'index.html' },
+        { label: 'Projects', href: 'index.html', current: true },
+        { label: 'CV', href: 'https://clararuback.github.io/assets/cv.pdf' },
+        { label: 'Contact', href: 'index.html' }
+      ],
+      params: [
+        { k: 'INPUT', v: 'Kinect · visitor silhouettes' },
+        { k: 'ENGINE', v: 'Processing' },
+        { k: 'PHYSICS', v: 'Elasticity · weight · speed' },
+        { k: 'OVERLAY', v: 'Force & speed arrows', highlight: true },
+        { k: 'VENUE', v: 'Sesc Tijuca · Rio de Janeiro' }
+      ]
+    };
+  }
+}
+
+(function(){
+  var h = React.createElement;
+  function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
+  window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
+  window.DCLogic.prototype.setState = function(){};
+  var vals = (typeof Component === 'function') ? new Component({}).renderVals() : {};
+  document.querySelectorAll('[data-cmp]').forEach(function(el){
+    var C = window.PortfolioUX && window.PortfolioUX[el.getAttribute('data-cmp')];
+    if (!C) return;
+    var props = JSON.parse(el.getAttribute('data-attrs') || '{}');
+    var holes = JSON.parse(el.getAttribute('data-holes') || '{}');
+    Object.keys(holes).forEach(function(p){ props[p] = vals[holes[p]]; });
+    var inner = el.innerHTML.trim(), child = null;
+    if (inner) child = inner.indexOf('<') === -1 ? decode(inner)
+      : h('span', { style: { display: 'contents' }, dangerouslySetInnerHTML: { __html: inner } });
+    ReactDOM.createRoot(el).render(h(C, props, child));
+  });
+})();
+
+</script>
 </body>
 </html>

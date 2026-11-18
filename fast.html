@@ -1,84 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Avoiding hotel queues with TOTVS Fast Check-in | Case Study</title>
-  <meta name="description" content="UX case study on improving hotel check-in experience with TOTVS Fast Check-in." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOTVS Fast Check-in — Case study</title>
+<link rel="stylesheet" href="assets/portfolio/tokens.css">
+<link rel="stylesheet" href="assets/portfolio/bundle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:var(--paper)}
+a{color:var(--red)}a:hover{color:var(--ink)}
+.pux-case{max-width:none !important;height:100%}
+.pux-readout{max-width:none !important}
+</style>
+<style>img{max-width:100%}</style>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="assets/portfolio/bundle.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+<div style="background: var(--paper); color: var(--ink); font-family: var(--font-sans); min-height: 100%;">
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1 class="reveal">Avoiding hotel queues with <br><span style="color:var(--accent)">TOTVS Fast Check-in</span></h1>
-        <p class="reveal" style="transition-delay:.1s">Redesigning a feature to improve guest experience and operational efficiency.</p>
-        <div class="reveal" style="transition-delay:.2s">
-          <img data-parallax data-speed=".12" src="assets/telasmobile.png" alt="TOTVS Fast Check-in screens">
-        </div>
-        <div class="blob parallax" data-parallax data-speed=".06" aria-hidden="true"></div>
-      </div>
-    </section>
+<div data-cmp="NavBar" data-attrs="{&quot;brand&quot;: &quot;Ruback&quot;, &quot;homeHref&quot;: &quot;index.html&quot;, &quot;navLabel&quot;: &quot;Main&quot;}" data-holes="{&quot;links&quot;: &quot;links&quot;}" style="display: contents;">
+<div style="display: inline-flex; border: 1px solid var(--ink);" role="group" aria-label="Language">
+<span aria-current="true" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; background: var(--console); color: var(--console-ink);">EN</span>
+<a href="pt/fast.html" lang="pt-BR" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; color: var(--ink); text-decoration: none;">PT</a>
+</div>
+</div>
 
-    <section>
-      <div class="container content">
-        <h2 class="reveal">The Challenge</h2>
-        <p class="reveal" style="transition-delay:.05s">Brazilian legislation requires extensive information during check-in, which consumes significant time for hotel staff and guests, leading to long queues during peak periods.</p>
+<main style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box;">
 
-        <h2 class="reveal">The Solution</h2>
-        <p class="reveal" style="transition-delay:.05s">O TOTVS Fast Check-in was created to collect all mandatory data before the guest's arrival, allowing them to simply present their ID and proceed directly to their room.</p>
+<header style="padding: 48px 0 32px;">
+<a href="index.html" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-decoration: none;">← All projects</a>
+<div style="margin-top: 32px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;one&quot;}" style="display: contents;">UX case · TOTVS</div></div>
+<h1 style="font: 500 72px/0.95 var(--font-display); letter-spacing: -0.02em; margin: 16px 0 24px; max-width: 14em;">Avoiding hotel queues with TOTVS Fast Check‑in</h1>
+<p style="font: 400 20px/32px var(--font-sans); color: var(--muted); max-width: 38em; margin: 0 0 24px;">As the only designer on the product, I turned a little-used, desktop-only pre-check-in into one of the most valued features of TOTVS PMS — and then scaled it into a white-label product.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Product Design</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Mobile-first</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Data-informed</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">White label</div>
+<div data-cmp="Tag" data-attrs="{&quot;tone&quot;: &quot;console&quot;}" data-holes="{}" style="display: contents;">DataDog</div>
+</div>
+</header>
 
-        <h2 class="reveal">Primary Issues</h2>
-        <ul class="reveal" style="transition-delay:.05s">
-          <li>Usability and development flaws</li>
-          <li>Poor integration with the PMS (Property Management System)</li>
-          <li>Available only in the desktop version</li>
-        </ul>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch; padding: 32px 0 64px;">
+<figure style="flex: 7 1 520px; min-width: 0; margin: 0; overflow: hidden">
+<img src="assets/portfolio/f5ed6e6b46574d41717da29c9429e776.png" alt="Three mobile screens of TOTVS Fast Check-in: guest list with status, guest form explanation and the check-in card" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</figure>
+<div style="flex: 5 1 340px; min-width: 0; display: flex;">
+<div data-cmp="Readout" data-attrs="{&quot;title&quot;: &quot;case_01 / summary&quot;, &quot;status&quot;: &quot;Shipped&quot;}" data-holes="{&quot;rows&quot;: &quot;summary&quot;}" style="width: 100%;"></div>
+</div>
+</section>
 
-        <h2 class="reveal">Our Intervention</h2>
-        <p class="reveal" style="transition-delay:.05s">By analyzing user behavior via DataDog, we implemented several improvements to the flow and interface. After those fixes, we closely monitored the functionality, engaging the team to work with data.</p>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;one&quot;}" style="display: contents;">Context</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 16px; max-width: 40em;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">In Brazil, every hotel guest must fill in the <strong>FNRH</strong> (Ficha Nacional de Registro de Hóspedes), a mandatory registration form defined by Decree 7.381/2010. At the front desk this means personal data, documents and a signature for every guest, every stay — and long queues at peak times.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">TOTVS Fast Check-in already existed to solve this: guests fill in the FNRH before arriving and only show their ID at the desk. <strong>But very few guests were completing it.</strong></p>
+</div>
+</section>
 
-        <h2 class="reveal">Results</h2>
-        <div class="metrics reveal" style="transition-delay:.05s">
-          <div class="metric"><h3>+400%</h3><p>Usage (Fev/24 vs Fev/23)</p></div>
-          <div class="metric"><h3>49%</h3><p>Conversion rate</p></div>
-          <div class="metric"><h3>4.2/5</h3><p>User rating</p></div>
-        </div>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;two&quot;}" style="display: contents;">The problem</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">At the start, the only data we had was the number of forms submitted — we couldn't see where or why guests gave up. So <strong>we contacted our clients, the hotels, to understand why they weren’t using it</strong>, and I reviewed the flow end to end. Three problems came up:</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font: 400 18px/30px var(--font-sans);">
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">01</span><span><strong>Usability and development flaws</strong> in the flow itself. The most critical: the form wasn’t sent to guests automatically — staff had to send it one by one, and the action to do it was buried inside other flows.</span></li>
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">02</span><span><strong>Weak integration with the PMS</strong>, so the front desk had little reason to trust and promote it.</span></li>
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">03</span><span><strong>Unusable on mobile</strong> — the flow got stuck and guests couldn’t finish it, even though that’s where guests open the link.</span></li>
+</ul>
+<p style="font: 500 28px/1.25 var(--font-display); margin: 8px 0 0; max-width: 28em; padding-left: 24px; border-left: 4px solid var(--red);">This wasn’t only a UI problem. To be used, the feature had to work on the device guests actually have — and deliver data the front desk could trust.</p>
+</div>
+</section>
 
-        <h2 class="reveal">Impact</h2>
-        <p class="reveal" style="transition-delay:.05s">O TOTVS Fast Check-in became one of the most valued features of TOTVS PMS, adopted by major hotel chains and significantly improving the experience for both guests and staff.</p>
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;three&quot;}" style="display: contents;">Making it measurable</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">“Forms submitted” couldn’t tell us what was going wrong. So, alongside the redesign, I pushed to <strong>instrument the flow with DataDog</strong> — from then on every decision could be checked step by step instead of guessed, and the team started following the numbers together.</p>
+<code style="display: block; background: var(--console); color: var(--console-muted); font: 400 14px/22px var(--font-mono); padding: 16px;">$ datadog --track fast-checkin <span style="color: var(--signal);">→ step funnel · completion · rating</span></code>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+<div style="border-top: 2px solid var(--ink); padding-top: 12px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red);">GOAL · USAGE</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 8px 0 0;">More reservations with pre-check-in → monthly usage</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 12px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red);">GOAL · COMPLETION</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 8px 0 0;">Guests who start, finish → completion rate</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 12px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red);">GOAL · SATISFACTION</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 8px 0 0;">How guests feel about it → in-flow rating (1–5)</p>
+</div>
+</div>
+</div>
+</section>
 
-        <h2 class="reveal">Key Takeaways</h2>
-        <div class="takeaways reveal" style="transition-delay:.05s">
-          <ul>
-            <li>Data driven decisions – Analytics (DataDog) were crucial for prioritizing improvements.</li>
-            <li>Design is not just about looks – Integration with PMS and cross-platform experience were essential for success.</li>
-            <li>Measurable impact – The solution not only improved UX but also generated operational savings for hotels.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<section style="padding: 64px 0 32px; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;four&quot;}" style="display: contents;">Key design decisions</div>
+<div style="display: grid; gap: 48px; margin-top: 32px;">
 
-    <footer>
-      <h2 class="reveal">Want to see more case studies?</h2>
-      <a href="index.html" class="cta reveal" style="transition-delay:.05s">Back to Portfolio</a>
-    </footer>
-  </main>
+<article style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div style="flex: 1 1 260px; font: 500 40px/1 var(--font-display); color: var(--red);">4.1</div>
+<div style="flex: 3 1 520px; min-width: 0; max-width: 40em;">
+<h3 style="font: 600 24px/32px var(--font-sans); margin: 0 0 12px;">Mobile-first, not “desktop made responsive”</h3>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0 0 16px;">Guests open the link on their phones, often on the way to the hotel. I rebuilt the flow around short steps with one main action each.</p>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;"><span style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--ink);">DISCARDED →</span> reusing the existing components as they were. Several of them simply didn’t work on mobile, so I redesigned or replaced them.</p>
+</div>
+</article>
 
-  <script src="scripts.js"></script>
+<article style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div style="flex: 1 1 260px; font: 500 40px/1 var(--font-display); color: var(--red);">4.2</div>
+<div style="flex: 3 1 520px; min-width: 0; max-width: 40em;">
+<h3 style="font: 600 24px/32px var(--font-sans); margin: 0 0 12px;">Two signature experiences, negotiated with the devs</h3>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0 0 16px;">The signature is legally required, and signing with a finger is a different gesture from signing with a mouse. Instead of forcing one component onto every screen, I worked with the developers to build <strong>two versions of the signature capture — one for mobile, one for web</strong>. On the phone, the guest is asked to turn it sideways, which gives a wide signing area; on the web, signing happens in a dedicated modal.</p>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;"><span style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--ink);">TRADE-OFF →</span> more development and maintenance effort, accepted so each device gets a signature that actually works.</p>
+</div>
+</article>
+
+<figure style="margin: 0; display: grid; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; padding: 32px; background: var(--paper-2, #F2F2F2)">
+<img src="assets/portfolio/b24ddb4e1181e6b3b923f66b9ef72612.png" alt="Mobile: screen asking the guest to turn the phone sideways to sign" style="display: block; width: 180px; max-width: 100%; height: auto">
+<img src="assets/portfolio/d3007bcb8b1a84686b5e0e43434ee24e.png" alt="Mobile in landscape: wide signature area with clear and confirm buttons" style="display: block; flex: 1 1 320px; min-width: 0; max-width: 100%; height: auto">
+<img src="assets/portfolio/24ee21898251a99e42d35fc32e8f9618.png" alt="Web: signature modal with drawing area, clear, cancel and save buttons" style="display: block; flex: 1 1 320px; min-width: 0; max-width: 100%; height: auto">
+</div>
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);">// One requirement, two devices, two solutions — mobile (rotate to sign) and web (modal)</figcaption>
+</figure>
+
+<article style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div style="flex: 1 1 260px; font: 500 40px/1 var(--font-display); color: var(--red);">4.3</div>
+<div style="flex: 3 1 520px; min-width: 0; max-width: 40em;">
+<h3 style="font: 600 24px/32px var(--font-sans); margin: 0 0 12px;">Explaining why we ask for so much data</h3>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">Asking for documents before arrival feels invasive. I added a short explanation of what the FNRH is and that it’s required by law (“What is the guest form?”), right where the doubt appears — not hidden in a FAQ.</p>
+</div>
+</article>
+
+<article style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div style="flex: 1 1 260px; font: 500 40px/1 var(--font-display); color: var(--red);">4.4</div>
+<div style="flex: 3 1 520px; min-width: 0; max-width: 40em;">
+<h3 style="font: 600 24px/32px var(--font-sans); margin: 0 0 12px;">One booking, several guests — with visible status</h3>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">A reservation usually has more than one guest. The booker sees every guest with a clear status (<em>Completed</em> / <em>Signature pending</em>) and can edit or finish each one.</p>
+</div>
+</article>
+
+
+
+<article style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div style="flex: 1 1 260px; font: 500 40px/1 var(--font-display); color: var(--red);">4.5</div>
+<div style="flex: 3 1 520px; min-width: 0; max-width: 40em;">
+<h3 style="font: 600 24px/32px var(--font-sans); margin: 0 0 12px;">A check-in card that closes the loop</h3>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">At the end, the guest gets a check-in card with dates and a code to show at the desk: the guest knows they’re done, and staff find the record in the PMS right away.</p>
+</div>
+</article>
+</div>
+</section>
+
+<figure style="margin: 0; padding: 32px 0 64px;">
+<img src="assets/portfolio/5f9585a92f5edba6272ac8875f0ac385.png" alt="TOTVS Fast Check-in on desktop" style="display: block; width: 100%; height: auto">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">// Web version, integrated with the PMS</figcaption>
+</figure>
+
+<section style="padding: 64px 0; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;five&quot;}" style="display: contents;">Results</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; margin-top: 32px;">
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;+400%&quot;, &quot;label&quot;: &quot;Usage&quot;, &quot;detail&quot;: &quot;Feb/24 vs Feb/23&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;49%&quot;, &quot;label&quot;: &quot;Completion rate&quot;, &quot;detail&quot;: &quot;First time it could be measured&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.2/5&quot;, &quot;label&quot;: &quot;User rating&quot;, &quot;detail&quot;: &quot;In-flow guest rating&quot;}" data-holes="{&quot;onConsole&quot;: &quot;yes&quot;}" style="display: contents;"></div>
+</div>
+<p style="font: 500 28px/1.25 var(--font-display); margin: 48px 0 0; max-width: 28em;">Fast Check-in became one of the most valued features of TOTVS PMS and was adopted by major hotel chains.</p>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0 64px; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;six&quot;}" style="display: contents;">Scaling: white label</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">Success created a new demand: more hotels wanted to offer Fast Check-in, <strong>but under their own brand</strong>. I designed a customizable white-label version, so each hotel can apply its identity without breaking the flow and the usability we had already validated.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">In a settings panel, the hotel sets its name, cover image, logo, font and five brand colors — with a <strong>live phone preview</strong>. Only brand choices are configurable; the layout and components stay fixed, so every hotel’s version keeps the validated flow. The same panel also manages data collection, the guest profile, an add-ons module and extra offers.</p>
+</div>
+</section>
+
+<figure style="margin: 0 0 64px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+<img src="assets/portfolio/5a394afab51e6e71df7661a038145698.png" alt="White-label settings panel: hotel name, cover image, font, logo and five brand colors, with a live phone preview" style="display: block; flex: 3 1 560px; min-width: 0; max-width: 100%; height: auto">
+<img src="assets/portfolio/08a6a9bdbfde1cd13a7155db385e66b9.png" alt="Branded mobile screen for a hotel, offering add-ons such as breakfast, early check-in and late check-out" style="display: block; flex: 1 1 200px; width: 240px; max-width: 100%; height: auto">
+<figcaption style="flex: 1 1 100%; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);">// Settings panel with live preview · the guest flow in a hotel’s own brand, with add-ons</figcaption>
+</figure>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0 64px; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;seven&quot;}" style="display: contents;">Next: guest profile</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 16px; max-width: 40em;">
+<div><div data-cmp="Tag" data-attrs="{&quot;tone&quot;: &quot;console&quot;}" data-holes="{}" style="display: contents;">Concept</div></div>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">I also conceived an integration with the guest profile in the PMS: using the pre-check-in moment to collect optional extra information, so hotels can offer personalized service and a better stay. It turns a legal obligation into the starting point of the guest relationship.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0;">The hotel picks and reorders the questions it wants to ask — dietary restrictions, special requests, bed or floor preference — and turns each one on or off, again with a live preview.</p>
+</div>
+</section>
+
+<figure style="margin: 0 0 64px;">
+<img src="assets/portfolio/7c72e6875847603b2110c94fcf2089a9.png" alt="Guest profile settings: list of optional questions with drag handles and on/off toggles, plus a preview of the active questions" style="display: block; width: 100%; height: auto">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">// Guest profile: hotels choose, order and toggle extra questions</figcaption>
+</figure>
+
+<section style="padding: 64px 0; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;eight&quot;}" style="display: contents;">What I learned</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; margin-top: 32px;">
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">If you can’t measure it, make it measurable</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Starting with only “forms submitted”, instrumenting the flow was as important as redesigning it.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Mobile-first means rethinking, not shrinking</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">The signature showed that sometimes the right answer is two solutions, not one compromise.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Good features become products</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Growth brought new needs — brand customization and personalization — to design for without losing what made it work.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between; padding: 48px 0 64px; border-top: 2px solid var(--ink);">
+<div>
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--muted);">NEXT PROJECT → CASE_02</div>
+<a href="pms.html" style="display: inline-block; font: 500 40px/1.1 var(--font-display); color: var(--ink); text-decoration: none; margin-top: 8px;">TOTVS PMS SaaS <span style="color: var(--red);">→</span></a>
+</div>
+<div data-cmp="Button" data-attrs="{&quot;variant&quot;: &quot;secondary&quot;, &quot;href&quot;: &quot;index.html&quot;}" data-holes="{}" style="display: contents;">Back to portfolio</div>
+</section>
+</main>
+
+<footer style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; padding: 16px 32px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--hairline);">
+<span>© 2026 Clara Ruback</span>
+<a href="mailto:clararuback@gmail.com" style="color: var(--muted);">clararuback@gmail.com</a>
+</footer>
+</div>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
+      links: [
+        { label: 'Home', href: 'index.html' },
+        { label: 'Projects', href: 'index.html', current: true },
+        { label: 'CV', href: 'https://clararuback.github.io/assets/cv.pdf' },
+        { label: 'Contact', href: 'index.html' }
+      ],
+      summary: [
+        { k: 'ROLE', v: 'Sole product designer' },
+        { k: 'SCOPE', v: 'End to end' },
+        { k: 'TEAM', v: '[PM + X devs]' },
+        { k: 'TIMELINE', v: '[Mon/YY – Mon/YY]' },
+        { k: 'PLATFORM', v: 'Mobile-first web + PMS' },
+        { k: 'RESULT', v: '+400% usage', highlight: true }
+      ]
+    };
+  }
+}
+
+(function(){
+  var h = React.createElement;
+  function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
+  window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
+  window.DCLogic.prototype.setState = function(){};
+  var vals = (typeof Component === 'function') ? new Component({}).renderVals() : {};
+  document.querySelectorAll('[data-cmp]').forEach(function(el){
+    var C = window.PortfolioUX && window.PortfolioUX[el.getAttribute('data-cmp')];
+    if (!C) return;
+    var props = JSON.parse(el.getAttribute('data-attrs') || '{}');
+    var holes = JSON.parse(el.getAttribute('data-holes') || '{}');
+    Object.keys(holes).forEach(function(p){ props[p] = vals[holes[p]]; });
+    var inner = el.innerHTML.trim(), child = null;
+    if (inner) child = inner.indexOf('<') === -1 ? decode(inner)
+      : h('span', { style: { display: 'contents' }, dangerouslySetInnerHTML: { __html: inner } });
+    ReactDOM.createRoot(el).render(h(C, props, child));
+  });
+})();
+
+</script>
 </body>
 </html>

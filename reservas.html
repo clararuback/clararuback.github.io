@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservations in TOTVS PMS — Case study</title>
+<link rel="stylesheet" href="assets/portfolio/tokens.css">
+<link rel="stylesheet" href="assets/portfolio/bundle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:var(--paper)}
+a{color:var(--red)}a:hover{color:var(--ink)}
+.pux-readout{max-width:none !important}
+</style>
+<style>img{max-width:100%}</style>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="assets/portfolio/bundle.js"></script>
+</head>
+<body>
+<div style="background: var(--paper); color: var(--ink); font-family: var(--font-sans); min-height: 100%;">
+
+<div data-cmp="NavBar" data-attrs="{&quot;brand&quot;: &quot;Ruback&quot;, &quot;homeHref&quot;: &quot;index.html&quot;, &quot;navLabel&quot;: &quot;Main&quot;}" data-holes="{&quot;links&quot;: &quot;links&quot;}" style="display: contents;">
+<div style="display: inline-flex; border: 1px solid var(--ink);" role="group" aria-label="Language">
+<span aria-current="true" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; background: var(--console); color: var(--console-ink);">EN</span>
+<a href="pt/reservas.html" lang="pt-BR" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; padding: 6px 10px; color: var(--ink); text-decoration: none;">PT</a>
+</div>
+</div>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box;">
+
+<header style="padding: 48px 0 32px;">
+<a href="index.html" style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-decoration: none;">← All projects</a>
+<div style="margin-top: 32px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;caseNo&quot;}" style="display: contents;">Research + product design · TOTVS PMS</div></div>
+<h1 style="font: 500 72px/0.95 var(--font-display); letter-spacing: -0.02em; margin: 16px 0 24px; max-width: 14em;">Redesigning how hotels create and edit reservations</h1>
+<p style="font: 400 20px/32px var(--font-sans); color: var(--muted); max-width: 38em; margin: 0 0 24px;">A discovery with six hotels led to two connected projects in TOTVS PMS: a new reservation creation flow and a refactored editing experience. It is also a story about adapting the design when a key technical dependency was deprioritized.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">User Research</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">Product Design</div>
+<div data-cmp="Tag" data-attrs="{}" data-holes="{}" style="display: contents;">B2B SaaS</div>
+<div data-cmp="Tag" data-attrs="{&quot;tone&quot;: &quot;console&quot;}" data-holes="{}" style="display: contents;">Usability testing</div>
+</div>
+</header>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch; padding: 32px 0 64px;">
+<figure style="flex: 7 1 520px; min-width: 0; margin: 0; border: 1px solid var(--hairline); overflow: hidden; background: var(--surface);">
+<img src="assets/portfolio/a07ccf6e6068f60eb1e078a86af7742f.png" alt="Edit reservation, Quote tab: rate details, a day-by-day calendar with discounted nightly rates and a side panel comparing the original and new quote" style="display: block; width: 100%; height: 100%; aspect-ratio: 1280 / 1137; object-fit: cover; object-position: top;">
+</figure>
+<div style="flex: 5 1 340px; min-width: 0; display: flex;">
+<div data-cmp="Readout" data-attrs="{&quot;title&quot;: &quot;case_07 / summary&quot;, &quot;status&quot;: &quot;Shipped&quot;}" data-holes="{&quot;rows&quot;: &quot;summary&quot;}" style="width: 100%;"></div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;one&quot;}" style="display: contents;">Context</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 16px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">Creating and editing reservations is the core daily task of a hotel’s reservations team — and the part of TOTVS PMS they touch most. The existing flows were dense, slow for large bookings and disconnected from how teams actually sell.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">As the designer responsible for the PMS reservation journey, I led the research, defined the flows and interfaces, and ran the usability tests that guided each iteration.</p>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;two&quot;}" style="display: contents;">Discovery</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">I conducted <strong>six 90-minute interviews</strong> with reservation teams — from an independent 57-room hotel to a 50-hotel chain — with a teammate taking notes. A 22-question script covered the full service cycle: first contact, data collected, information consulted, tools and workarounds, follow-up and pains. I then synthesized the answers question by question to compare practices across hotels.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px;">
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;6&quot;, &quot;label&quot;: &quot;Hotels &amp; chains&quot;, &quot;detail&quot;: &quot;57 rooms to 50 hotels&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;9 h&quot;, &quot;label&quot;: &quot;Of interviews&quot;, &quot;detail&quot;: &quot;6 sessions × 90 min&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;22&quot;, &quot;label&quot;: &quot;Questions&quot;, &quot;detail&quot;: &quot;Semi-structured script&quot;}" data-holes="{}" style="display: contents;"></div>
+</div>
+</div>
+</section>
+
+<section style="padding: 64px 0; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;three&quot;}" style="display: contents;">What we learned</div>
+<p style="font: 500 32px/1.2 var(--font-display); margin: 32px 0; max-width: 26em;">“The biggest challenge is using several platforms and tabs at the same time to make just one reservation.”<span style="display: block; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">— Reservations team, 11-hotel chain</span></p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px;">
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">01 · PRICES LIVE ELSEWHERE</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Teams checked availability in the PMS but prices on the booking engine or the hotel website. Integration delays of up to 3 hours caused mismatches, double entry and overbooking.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">02 · WORKAROUNDS EVERYWHERE</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Spreadsheets and notebooks tracked payments, pending bookings, no-shows and unpublished rates. One supervisor entered 700 reservations by hand in a single month.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">03 · QUOTE FIRST, BOOK LATER</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">The real sequence is availability → quote → reservation. Teams negotiate on the phone and need to send a quote immediately, keeping unpaid bookings “to be confirmed”.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red); margin-bottom: 8px;">04 · CHANGES ARE COSTLY</div>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Changing dates, guests or rates after booking was slow — a 60-room group froze the system for 40 minutes — and teams lacked a clear record of what had been negotiated.</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; margin-top: 48px; background: var(--console); color: var(--console-ink); padding: 24px;">
+<div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--signal); margin-bottom: 8px;">PRINCIPLE 01</div><p style="font: 400 16px/26px var(--font-sans); margin: 0;"><strong>Follow the real sequence.</strong> Search, quote and book in one flow.</p></div>
+<div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--signal); margin-bottom: 8px;">PRINCIPLE 02</div><p style="font: 400 16px/26px var(--font-sans); margin: 0;"><strong>Always show the money.</strong> Any change displays its impact on the price.</p></div>
+<div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--signal); margin-bottom: 8px;">PRINCIPLE 03</div><p style="font: 400 16px/26px var(--font-sans); margin: 0;"><strong>One place per task.</strong> No more switching tabs to finish a booking.</p></div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;four&quot;}" style="display: contents;">Creating a reservation</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">The new creation flow mirrors how teams sell: search by period and party, compare <strong>recommended rooms with each rate’s conditions</strong> (refundability, payment, board), build a cart that totals the quote, then review and confirm.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">It was designed alongside a planned <strong>integration between the PMS and the hotels’ rate management</strong>, which would bring the correct prices into the platform automatically — solving the first pain from the discovery.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: end;">
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.5/5&quot;, &quot;label&quot;: &quot;Usability test&quot;, &quot;detail&quot;: &quot;First version · 15 evaluations&quot;}" data-holes="{}" style="display: contents;"></div>
+</div>
+</div>
+</section>
+<figure style="margin: 0; padding: 16px 0 64px;">
+<img src="assets/portfolio/1a558a0098138c4b75ec4a6deb030b36.png" alt="New reservation flow on a laptop: recommended rooms with rate cards and the reservation cart" style="display: block; width: 100%; max-width: 960px; margin: 0 auto; height: auto;">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px; text-align: center;">// Room search, rate cards and cart</figcaption>
+</figure>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;five&quot;}" style="display: contents;">Editing a reservation</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">Most of a reservation team’s day is spent on bookings that already exist: extending a stay, adding a guest, renegotiating a rate. I refactored the editing experience around the same principles, splitting it into two focused tabs:</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font: 400 18px/30px var(--font-sans);">
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">01</span><span><strong>Summary</strong> — booker, stay, guarantee and guests on a single editable page.</span></li>
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">02</span><span><strong>Quote</strong> — rate details and a calendar to adjust prices by period, by weekday or day by day.</span></li>
+<li style="display: flex; gap: 16px;"><span style="font: 500 14px/30px var(--font-mono); color: var(--red);">03</span><span><strong>A persistent side panel</strong> with the reservation status and a warning whenever a change affects the price, comparing the original and the new quote before anything is confirmed.</span></li>
+</ul>
+</div>
+</section>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; padding: 16px 0 32px; align-items: start;">
+<figure style="flex: 3 1 420px; min-width: 0; margin: 0;">
+<img src="assets/portfolio/3d277a98ecfb03fba6c3fbf66a7f7acd.png" alt="Edit reservation, Summary tab: booker, stay, guarantee and guest details, with the status panel showing original and new quote" style="display: block; width: 100%; height: auto; border: 1px solid var(--hairline);">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">// Summary tab with price-impact panel</figcaption>
+</figure>
+<div style="flex: 2 1 320px; min-width: 0; background: var(--surface); border: 1px solid var(--hairline); padding: 24px; display: grid; gap: 16px; align-content: start;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red);">USABILITY TEST · 23 PARTICIPANTS</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px;">
+<div><div style="font: 500 48px/1 var(--font-display); color: var(--blue);">4.6</div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; margin-top: 4px;">AVG. SCORE / 5</div></div>
+<div><div style="font: 500 48px/1 var(--font-display); color: var(--blue);">22/23</div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; margin-top: 4px;">RATED 4 OR MORE</div></div>
+</div>
+<p style="font: 400 16px/26px var(--font-sans); margin: 0;">Participants valued editing the stay and the quote in one place and comparing the original with the new quote — “much more fluid and less bureaucratic”.</p>
+<p style="font: 400 16px/26px var(--font-sans); margin: 0; color: var(--muted);"><strong style="color: var(--ink);">Iterated after the test:</strong> the small “Review” link became a “Review quote” button, a price-impact warning was added, the rate table became a calendar and totals now include taxes.</p>
+</div>
+</div>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; padding: 32px 0; border-top: 1px solid var(--hairline);">
+<div style="flex: 1 1 260px;"><div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;six&quot;}" style="display: contents;">When the plan changed</div></div>
+<div style="flex: 3 1 520px; min-width: 0; display: grid; gap: 24px;">
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">The rate-management integration was later <strong>deprioritized</strong>. Without it, the prices in the PMS did not always match what hotels had negotiated — the same pain we had heard in the discovery — and hotels began to report it.</p>
+<p style="font: 400 18px/30px var(--font-sans); margin: 0; max-width: 40em;">Rather than wait for the integration, I adapted the flow so teams could <strong>set the right price themselves</strong>. The <strong>Edit values</strong> modal lets them select a period or weekdays and apply a change — add or subtract a value, a percentage increase or discount, or a manual rate — or type each night individually. The original rate stays visible, a reason is recorded and every change can be undone before saving.</p>
+</div>
+</section>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 32px; padding: 16px 0 32px;">
+<figure style="margin: 0;">
+<img src="assets/portfolio/5873d6e151621da5545cba78f05f6908.png" alt="Edit values: change type, charged value, reason and board fields for a selected week" style="display: block; width: 100%; height: auto; border: 1px solid var(--hairline);">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">// 1. Choose the change</figcaption>
+</figure>
+<figure style="margin: 0;">
+<img src="assets/portfolio/c2da5232a876e4e9f456ad6c91a46be5.png" alt="Edit values after applying a 25% discount: original and new nightly rates and the updated total" style="display: block; width: 100%; height: auto; border: 1px solid var(--hairline);">
+<figcaption style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 12px;">// 2. Review before saving</figcaption>
+</figure>
+</div>
+<div style="background: var(--surface); border: 1px solid var(--hairline); padding: 24px; display: grid; gap: 16px; margin-bottom: 64px;">
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--red);">USABILITY TEST · RATE ADJUSTMENT · 11 PARTICIPANTS</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px;">
+<div><div style="font: 500 48px/1 var(--font-display); color: var(--blue);">11/11</div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; margin-top: 4px;">COMPLETED THE TASKS</div></div>
+<div><div style="font: 500 48px/1 var(--font-display); color: var(--blue);">10/11</div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; margin-top: 4px;">USED ALL 3 METHODS</div></div>
+<div><div style="font: 500 48px/1 var(--font-display); color: var(--blue);">4.2</div><div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; margin-top: 4px;">AVG. SCORE / 5</div></div>
+</div>
+<p style="font: 400 16px/26px var(--font-sans); margin: 0; max-width: 60em;">The calendar view with each night’s rate, discount, board and total was the most valued element. The main friction: the three methods were split across two tabs and “select from calendar” overlapped with “day by day”. Next steps include merging them into a single entry point and defining how the calendar scales to long stays, from 20 nights to a year.</p>
+</div>
+
+<section style="padding: 64px 0; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;seven&quot;}" style="display: contents;">Results</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 32px;">
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.6/5&quot;, &quot;label&quot;: &quot;Reservation editing&quot;, &quot;detail&quot;: &quot;23 participants&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.5/5&quot;, &quot;label&quot;: &quot;Creation, first version&quot;, &quot;detail&quot;: &quot;15 evaluations&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;4.2/5&quot;, &quot;label&quot;: &quot;Rate adjustment&quot;, &quot;detail&quot;: &quot;11 participants · 100% completion&quot;}" data-holes="{}" style="display: contents;"></div>
+<div data-cmp="Metric" data-attrs="{&quot;value&quot;: &quot;49&quot;, &quot;label&quot;: &quot;Evaluations&quot;, &quot;detail&quot;: &quot;Across three test rounds&quot;}" data-holes="{&quot;onConsole&quot;: &quot;yes&quot;}" style="display: contents;"></div>
+</div>
+</section>
+
+<section style="padding: 64px 0; border-top: 1px solid var(--hairline);">
+<div data-cmp="PanelLabel" data-attrs="{}" data-holes="{&quot;index&quot;: &quot;eight&quot;}" style="display: contents;">Reflections</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; margin-top: 32px;">
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Treat dependencies as design risks</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">A well-rated flow still failed users when the integration it relied on moved. Today I plan a fallback for every critical dependency from the start.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Complaints are research too</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Client reports confirmed a pain already present in the discovery and gave us the urgency to solve it in the interface.</p>
+</div>
+<div style="border-top: 2px solid var(--ink); padding-top: 16px;">
+<h3 style="font: 600 20px/28px var(--font-sans); margin: 0 0 8px;">Flexibility needs guardrails</h3>
+<p style="font: 400 16px/26px var(--font-sans); color: var(--muted); margin: 0;">Manual pricing works when the original value, the reason and an undo are always visible.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between; padding: 48px 0 64px; border-top: 2px solid var(--ink);">
+<div>
+<div style="font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--muted);">BACK TO START → CASE_01</div>
+<a href="fast.html" style="display: inline-block; font: 500 40px/1.1 var(--font-display); color: var(--ink); text-decoration: none; margin-top: 8px;">TOTVS Fast Check‑in <span style="color: var(--red);">→</span></a>
+</div>
+<div data-cmp="Button" data-attrs="{&quot;variant&quot;: &quot;secondary&quot;, &quot;href&quot;: &quot;index.html&quot;}" data-holes="{}" style="display: contents;">Back to portfolio</div>
+</section>
+</main>
+
+<footer style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; padding: 16px 32px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--hairline);">
+<span>© 2026 Clara Ruback</span>
+<a href="mailto:clararuback@gmail.com" style="color: var(--muted);">clararuback@gmail.com</a>
+</footer>
+</div>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, caseNo: 7,
+      links: [
+        { label: 'Home', href: 'index.html' },
+        { label: 'Projects', href: 'index.html', current: true },
+        { label: 'CV', href: 'https://clararuback.github.io/assets/cv.pdf' },
+        { label: 'Contact', href: 'index.html' }
+      ],
+      summary: [
+        { k: 'ROLE', v: 'UX Designer · research to delivery' },
+        { k: 'PRODUCT', v: 'TOTVS PMS (SaaS)' },
+        { k: 'RESEARCH', v: '6 hotels · 9 h of interviews' },
+        { k: 'TESTS', v: '3 rounds · 49 evaluations' },
+        { k: 'EDITING', v: 'Rated 4.6/5', highlight: true }
+      ]
+    };
+  }
+}
+
+(function(){
+  var h = React.createElement;
+  function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
+  window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
+  window.DCLogic.prototype.setState = function(){};
+  var vals = (typeof Component === 'function') ? new Component({}).renderVals() : {};
+  document.querySelectorAll('[data-cmp]').forEach(function(el){
+    var C = window.PortfolioUX && window.PortfolioUX[el.getAttribute('data-cmp')];
+    if (!C) return;
+    var props = JSON.parse(el.getAttribute('data-attrs') || '{}');
+    var holes = JSON.parse(el.getAttribute('data-holes') || '{}');
+    Object.keys(holes).forEach(function(p){ props[p] = vals[holes[p]]; });
+    var inner = el.innerHTML.trim(), child = null;
+    if (inner) child = inner.indexOf('<') === -1 ? decode(inner)
+      : h('span', { style: { display: 'contents' }, dangerouslySetInnerHTML: { __html: inner } });
+    ReactDOM.createRoot(el).render(h(C, props, child));
+  });
+})();
+
+</script>
+</body>
+</html>

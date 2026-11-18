@@ -12,7 +12,17 @@ body{margin:0;background:var(--paper)}
 a{color:var(--red)}a:hover{color:var(--ink)}
 .pux-readout{max-width:none !important}
 </style>
-<style>img{max-width:100%}</style>
+<style>
+img{max-width:100%}
+html,body{overflow-x:hidden}
+h1,h2,h3,p,li{overflow-wrap:break-word}
+@media (max-width: 640px) {
+  h1{font-size:40px !important;line-height:1.02 !important}
+  h2{font-size:30px !important}
+  main,section{padding-left:16px !important;padding-right:16px !important}
+  main section{padding-left:0 !important;padding-right:0 !important}
+}
+</style>
 <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="assets/portfolio/bundle.js"></script>
@@ -108,6 +118,8 @@ a{color:var(--red)}a:hover{color:var(--ink)}
 </footer>
 </div>
 <script>
+window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
+window.DCLogic.prototype.setState = function(){};
 class Component extends DCLogic {
   renderVals() {
     return {
@@ -132,8 +144,6 @@ class Component extends DCLogic {
 (function(){
   var h = React.createElement;
   function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
-  window.DCLogic = function DCLogic(props){ this.props = props || {}; this.state = {}; };
-  window.DCLogic.prototype.setState = function(){};
   var vals = (typeof Component === 'function') ? new Component({}).renderVals() : {};
   document.querySelectorAll('[data-cmp]').forEach(function(el){
     var C = window.PortfolioUX && window.PortfolioUX[el.getAttribute('data-cmp')];
